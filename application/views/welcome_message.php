@@ -1,14 +1,36 @@
-<h1>Welcome to CodeIgniter!</h1>
+<?php
+defined('BASEPATH') OR exit('No direct script access allowed');
+?><!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>{pagetitle}</title>
+    <link rel='stylesheet' type='text/css' href='/assets/css/custom.css'>
+</head>
+<body>
 
-<div id="body">
-	<p>The page you are looking at is being generated dynamically by CodeIgniter.</p>
+<div id="container">
+	<h1>Welcome to {pagetitle}</h1>
 
-	<p>If you would like to edit this page you'll find it located at:</p>
-	<code>application/views/welcome_message.php</code>
+	<div id="body">
+        <h3>Inventory Outline</h3>
+        <div class="rowstats">
+            Number of Parts on hand: <span class ="rownum_1">{numParts}</span>    
+        </div>
+        <div class="rowstats">
+            Number of Assembled Bots on hand: <span class ="rownum_2">{numBots}</span>    
+        </div>
+        <div class="rowstats">
+            Spent Amount: <span class ="rownum_1">${spentAmount}</span>    
+        </div>
+        <div class="rowstats">
+            Earned Amount: <span class ="rownum_2">${earnedAmount}</span>    
+        </div>
+        <div class="span4"><a href="."><img src="/pix/a.jpg" width="300" title=""/></a></div>
+	</div>
 
-	<p>The corresponding controller for this page is found at:</p>
-	<code>application/controllers/Welcome.php</code>
-
-	<p>If you are exploring CodeIgniter for the very first time, you should 
-		start by reading the <a href="http://www.codeigniter.com/user_guide/">User Guide</a>.</p>
+	<p class="footer">Page rendered in <strong>{elapsed_time}</strong> seconds. <?php echo  (ENVIRONMENT === 'development') ?  'CodeIgniter Version <strong>' . CI_VERSION . '</strong>' : '' ?></p>
 </div>
+
+</body>
+</html>
