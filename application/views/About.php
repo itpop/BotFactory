@@ -1,3 +1,6 @@
+<!--
+ * This is the view for About page.
+-->
 <h1>About This Site</h1>
 <p>This is our Comp 4711 first academic assignment. It is not related to, nor is it endorsed by any similar
      business from the real world. The examples used on this page is for practice and submission for our first assignment.</p>

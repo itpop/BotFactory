@@ -2,6 +2,9 @@
 
 defined('BASEPATH') OR exit('No direct script access allowed');
 
+/* 
+ * This class is designed to render the Dashboard page.
+ */
 class Welcome extends Application
 {
 
@@ -17,16 +20,18 @@ class Welcome extends Application
 	 * map to /welcome/<method_name>
 	 * @see https://codeigniter.com/user_guide/general/urls.html
 	 */
-	public function index()
-	{
-		$this->data['pagebody'] = 'welcome_message';
+    public function index()
+    {
+        $this->data['pagebody'] = 'welcome_message';
+        $role = $this->session->userdata('userrole');
 
-        $this->data['numParts'] = $this->factory->getCount('parts');
-        $this->data['numBots'] = $this->factory->getCount('bots');
+        // stock outline
         $this->data['spentAmount'] = $this->factory->getAmount('0');
         $this->data['earnedAmount'] = $this->factory->getAmount('1');
+        $this->data['numParts'] = $this->factory->getCount('parts');
+        $this->data['numBots'] = $this->factory->getCount('bots');
         
-		$this->render(); 
-	}
-
+        // render the page
+        $this->render(); 
+    }
 }
