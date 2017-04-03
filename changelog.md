@@ -18,5 +18,7 @@ Team membership: Fred(Captain), Terry, Yiaoping, Jamie and Tim
 
 8. Styling & misc enhancement (Fred)
 
+9. Testing deployment server
+
 
 
