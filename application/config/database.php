@@ -75,10 +75,10 @@ $query_builder = TRUE;
 
 $db['default'] = array(
 	'dsn'	=> '',
-	'hostname' => 'localhost',
-	'username' => 'root',
-	'password' => 'password',
-	'database' => 'pi',
+	'hostname' => 'cstcode.db.6312068.hostedresource.com',
+	'username' => 'cstcode',
+	'password' => 'Itpop8000!',
+	'database' => 'cstcode',
 	'dbdriver' => 'mysqli',
 	'dbprefix' => '',
 	'pconnect' => FALSE,
