@@ -1,21 +1,7 @@
-## CodeIgniter3.1-starter3
+# Umbrella Bot Factory
+#BCIT Durian Team
+#Fred Yang, Yiaoping Shu, Terry Kang, Jamie Lee, Timur Makimov
 
-This project can be used as a starter for a webapp built with CodeIgniter 3.1.
+The purpose of the assignments, collectively, is to let you apply the techniques from the lessons and tutorials. As previously decribed, you are building a small but complete webapp, to manage a simple robot factory. Refer to assignment one for business logic descriptions.
 
-This starter builds on [CodeIgniter3.1-starter2](https://github.com/jedi-academy/CodeIgniter3.1-starter2),
-adding a base model with CRUD methods.
-
-**controllers/Welcome.php** has been modified to set the name of the desired
-view file as a *data* parameter, and to then invoke the inherited *render*
-method to trigger presentation.
-
-A view template is provided. The CSS has been extracted to an appropriate file
-in the public folder. Styling could be improved by using a CSS framework, like
-Bootstrap.
-
-The **application/config/autoload.php** configuration has been modified
-to preload the template parser library and the url helper.
-
-Configure your web server or virtual host so that your project's
-document root maps to this **public** folder inside your project.
-
+The purpose of this assignment (#2) is to add functionality to the mockup pieces from assignment #1, using a real (not mock) database and connecting to the Panda Research Center (PRC) for live data.
